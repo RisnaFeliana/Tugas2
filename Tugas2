@@ -1,0 +1,52 @@
+#include <stdio.h>
+main (){
+int operasi;
+float a, b,c,t, volume, luas, volume_silinder, menu;
+
+    printf("Program menghitung Luas dan volume bangun ruang\n");
+    printf("Risna Feliana MM-4134111001\n");
+    printf("Pilihan menu : \n\n");
+    printf("1. Menghitung volume kubus\n");
+    printf("2. Menghitung luas lingkaran\n");
+    printf("3. Menghitung volume silinder\n");
+    printf("Masukan menu : \n");
+    scanf("%d", &operasi);
+switch (operasi)
+    {
+    case 1 :
+        {
+        printf("Masukan panjang sisi kubus = ");
+        scanf("%f", &a);
+        volume = pow(a, 3);
+        printf("Maka volume kubus adalah = %2.2f", volume);
+    break;
+    }
+    case 2 :
+        {
+            printf("Masukan panjang jari-jari lingkaran = ");
+            scanf("%f", &b);
+            luas = 3.14*pow (b,2);
+            printf("Maka luas lingkaran adalah = %2.2f", luas);
+
+        break;
+        }
+    case 3 :
+        {
+            printf("Masukan panjang jari-jari lingkaran = \n");
+            printf("Masukan tinggi silinder = \n");
+
+            scanf("%f", &c);
+            volume_silinder = 3.14*pow(c, 2)*t;
+            printf("Maka volume silinder adalah = %2.2f", volume);
+
+        break;
+        }
+    default :
+        {
+
+        printf("ERROR");
+
+        break;
+        }
+    }
+}
